@@ -1,0 +1,16 @@
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+/static/
+
+# React
+node_modules/
+/build/
+
+# VSCode
+.vscode/
+
+# Miscellaneous
+.DS_Store
+.env

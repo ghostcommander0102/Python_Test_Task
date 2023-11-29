@@ -1,0 +1,35 @@
+$primary-color: #007bff;
+$primary-hover-color: #0056b3;
+$text-color: white;
+$border-color: #ddd;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+.calculator-container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	background-color: #f3f3f3;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px $box-shadow-color;
+
+	input,
+	select,
+	button {
+		margin: 10px;
+		padding: 10px;
+		border: 1px solid $border-color;
+		border-radius: 4px;
+	}
+
+	button {
+		background-color: $primary-color;
+		color: $text-color;
+		border-color: $primary-color;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $primary-hover-color;
+		}
+	}
+}

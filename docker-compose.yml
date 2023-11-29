@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .calculator_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - .calculator_backend:/app
+    command: python manage.py runserver 0.0.0.0:8000
+
+  frontend:
+    build: .calculator_frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - .calculator_frontend:/app
+    depends_on:
+      - backend
